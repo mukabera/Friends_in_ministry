@@ -1,6 +1,4 @@
 Fim::Application.routes.draw do
-
-
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -10,7 +8,6 @@ Fim::Application.routes.draw do
   get'ministry/Aboutus'
   get'ministry/signup'
   get'ministry/signin'
-
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
