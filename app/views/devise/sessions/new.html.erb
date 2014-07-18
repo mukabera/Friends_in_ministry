@@ -1,13 +1,15 @@
-<div class="row" style="background-color:blue">
-   <div class="span6 well" style="color:BLUE; size:10px">
+<div class="row" style="background-color:black">
+<div class="row">
+   <div class="span6 well" style="color:gold; size:10px; margin-left:100px; background-color:grey">
+
    	 FRIENDS IN MINISTRY
    </div>
 	
 
-	<div class="span6 well" style="color:BLUE; size:10px">
+	<div class="span6 well" style="color:gold; size:10px; background-color:grey">
 		<table>
    		<th>
-   			<td style="padding-left:200px"><%= link_to "HELP", ministry_help_path %></td>
+   			<td style="padding-left:200px;"><%= link_to "HELP", ministry_help_path %></td>
 
    		</th>
 
@@ -28,23 +30,28 @@
 <%= render "devise/shared/first" %>
 </div>
  <div class="span6" style="margin-left:300px">
-<h2>Sign in</h2>
+
+
+<h2 style="color:white">Sign in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div><%= f.label :username or Email%><br />
+  <div style="color:white"><%= f.label :username or Email%><br />
   <%= f.email_field :signin, autofocus: true %></div>
 
-  <div><%= f.label :password %><br />
+  <div style="color:white"><%= f.label :password %><br />
     <%= f.password_field :password, autocomplete: "off" %></div>
 
   <% if devise_mapping.rememberable? -%>
-    <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
+    <div style="color:white"><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
   <% end -%>
 
-  <div><%= f.submit "Sign in" %></div>
+  <div style="color:white"><%= f.submit "Sign in" %></div>
 
  <% end %>
  <%= render "devise/shared/links" %>
 </div>
  
+</div>
+
+
 </div>

@@ -6,10 +6,12 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body bgcolor="black">
 
 
 <%= yield %>
+
+<%= render :partial =>"ministry/footer" %>
 
 </body>
 </html>
