@@ -13,10 +13,12 @@
   <div><%= f.label :Lastname %><br />
   <%= f.text_field :Lastname %></div>
   <div><%= f.label :Country %><br />
-  <%= f.text_field :Country %></div>
-  
-  
-
+  <%= f.text_field :Country%>
+  <div>
+  <%= f.label :Country %><br/>
+  <%= f.select_tag(:Country, options_for_select(['Lisbon'], ['Madrid'])) %>
+  </div>
+</div>
   <div><%= f.label :password %><br />
   <%= f.password_field :password, autocomplete: "off" %></div>
 
