@@ -10,6 +10,7 @@ class MinistryController < ApplicationController
 	end
 
 	def Aboutus
+
 	end
 
 	def help
