@@ -1,4 +1,10 @@
 Fim::Application.routes.draw do
+  resources :posts
+
+
+  resources :comments
+
+
   devise_for :users
 
   # The priority is based upon order of creation:
@@ -6,9 +12,7 @@ Fim::Application.routes.draw do
   root :to => 'ministry#index'
   get'ministry/help'
   get'ministry/Aboutus'
-  get'ministry/signup'
-  get'ministry/signin'
-
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action

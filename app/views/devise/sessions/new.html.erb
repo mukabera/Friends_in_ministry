@@ -1,23 +1,19 @@
 <div class="row" style="background-color:purple">
 <div class="row">
-   <div class="span6 well" style="color:black; size:10px; margin-left:100px; background-color:white">
-
-   	 FRIENDS IN MINISTRY
-   </div>	
 	
-
-	<div class="span6 well" style="color:black; size:10px; background-color:white">
+	<div class="span12 well" style="color:black; size:10px; background-color:silver">
 		<table>
+
+      <th>
+        <td style="padding-left:300px"><%= link_to "ABOUT US", ministry_Aboutus_path %></td>
+
+      </th>
    		<th>
-   			<td style="padding-left:100px;"><%= link_to "HELP", ministry_help_path %></td>
+   			<td style="padding-left:300px;"><%= link_to "HELP", ministry_help_path %></td>
 
    		</th>
 
    	
-   		<th>
-   			<td style="padding-left:100px"><%= link_to "ABOUT US", ministry_Aboutus_path %></td>
-
-   		</th>
    		</table>
 	</div>
 
@@ -25,11 +21,12 @@
 
 
 <div class="row" style="margin-top:50px">
-<div class="span8">
 
-<%= render "devise/shared/first" %>
-</div>
- <div class="span3">
+  <div class="span8">
+
+    <%= render "devise/shared/first" %>
+  </div>
+  <div class="span3">
 
 
 <h2 style="color:white">Sign in</h2>
